@@ -14,10 +14,15 @@ set smartindent
 
 set nohlsearch
 set hidden
+
+set mouse=a
 set noerrorbells
 set nowrap
+
 set incsearch
 set scrolloff=8
+
+
 set colorcolumn=120
 set signcolumn=yes
 set termguicolors
@@ -25,3 +30,6 @@ set termguicolors
 lua require('plugins')
 
 colorscheme everforest
+
+set guicursor=n-v-c-i:block
+
