@@ -31,5 +31,3 @@ lua require('plugins')
 
 colorscheme everforest
 
-set guicursor=n-v-c-i:block
-
