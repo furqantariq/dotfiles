@@ -1,6 +1,5 @@
 syntax on
 
-
 set exrc
 
 set relativenumber
@@ -12,22 +11,26 @@ set expandtab
 set autoindent
 set smartindent
 
+set noswapfile
+set nobackup
+
 set nohlsearch
 set hidden
 
 set mouse=a
 set noerrorbells
-set nowrap
 
 set incsearch
 set scrolloff=8
 
-
 set colorcolumn=120
 set signcolumn=yes
 set termguicolors
+set fileencoding='utf-8'
 
 lua require('plugins')
+lua require('keymap')
 
-colorscheme everforest
 
+lua vim.notify = require("notify")
+colorscheme onedark
