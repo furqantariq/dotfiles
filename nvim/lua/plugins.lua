@@ -31,7 +31,25 @@ return require('packer').startup(function()
     -- Shopw info related to keymappings
 	use { 'folke/which-key.nvim', config = "require'plugin-configs.whichkey'"}
 
-    --  LSP stuff
-    use { 'neovim/nvim-lspconfig', config = "require'lsp.lsp'" }
-    
+    -- LSP stuff
+	use { 'neovim/nvim-lspconfig', config = "require'lsp.lsp'" }
+	
+	-- Highlighting
+--	use { 'nvim-treesitter/nvim-treesitter', config = "require'plugin-configs.treesitter'",
+--        run = ':TSUpdate' }
+	
+	-- Autocompletion
+	
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-cmdline'
+	use 'saadparwaiz1/cmp_luasnip'
+	use 'L3MON4D3/LuaSnip'
+	use { 'hrsh7th/nvim-cmp', config = "require'plugin-configs.cmp'" }
+	use 'onsails/lspkind.nvim'
+	
+	
+
+
 end)

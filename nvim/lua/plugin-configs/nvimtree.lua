@@ -28,6 +28,9 @@ require('nvim-tree').setup({
       custom_only = false,
       list = {
         -- user mappings go here
+        { key = 'l', action = 'edit' },
+        { key = 'h', action = 'close_node' },
+        
       },
     },
   },
