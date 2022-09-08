@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# git
+source ~/repos/dotfiles/bash/git-completion.bash
+source ~/repos/dotfiles/bash/git-prompt.sh
+
+# milkbox quotes
+fortune 2>/dev/null | cowsay -f milk 2>/dev/null
+
+# change PS
+PS1='\[\033]0;\u@\h:\w\007\]\[\033[1;91m\]\u@machine\[\033[01;34m\] \w \[\033[0;33m\]$(__git_ps1 " %s ")\[\033[01;34m\]\$\[\033[00m\] '
