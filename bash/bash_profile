@@ -1,8 +1,8 @@
 #! /bin/bash
 
 # git
-source ~/repos/dotfiles/bash/git-completion.bash
-source ~/repos/dotfiles/bash/git-prompt.sh
+source ./git-completion.bash
+source ./git-prompt.sh
 
 # milkbox quotes
 fortune 2>/dev/null | cowsay -f milk 2>/dev/null
