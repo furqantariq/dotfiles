@@ -1,8 +1,12 @@
 #! /bin/bash
 
+if [[ -f ~/.bashrc ]] ; then
+        . ~/.bashrc
+fi
+
 # git
-source ./git-completion.bash
-source ./git-prompt.sh
+source /usr/share/bash-completion/completions/git
+source /usr/share/git/git-prompt.sh
 
 # milkbox quotes
 fortune 2>/dev/null | cowsay -f milk 2>/dev/null

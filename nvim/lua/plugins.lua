@@ -6,6 +6,9 @@ return require('packer').startup(function()
     -- One Dark theme
     use 'furqantariq/onedark.nvim'
 
+    -- easymotion
+    use 'ggandor/lightspeed.nvim'    
+
     -- Icons used by varuious plugins
     use 'kyazdani42/nvim-web-devicons' 
 	
@@ -18,7 +21,7 @@ return require('packer').startup(function()
     -- File Explorer
     use { 'kyazdani42/nvim-tree.lua', config = "require'plugin-configs.nvimtree'" }
     
-    -- File search and grep
+    -- Telescope plugin
     use { 'nvim-telescope/telescope.nvim', 
         requires = { {'nvim-lua/plenary.nvim'} }, config = "require'plugin-configs.telescope'" }
 
@@ -48,8 +51,5 @@ return require('packer').startup(function()
 	use 'L3MON4D3/LuaSnip'
 	use { 'hrsh7th/nvim-cmp', config = "require'plugin-configs.cmp'" }
 	use 'onsails/lspkind.nvim'
-	
-	
-
 
 end)
